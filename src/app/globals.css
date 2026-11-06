@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sizing {
+  display: inline-block;
+  font-size: 30px;
+  transition: transform 0.15s ease-in-out;
+}
+
+.sizing:hover{
+  transform: scale(1.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p{
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.searchbtn {
+  outline: 2px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  width: 130px;
+  transition: 0.3s;
+}
+
+.searchbtn:hover {
+  background-color: grey;
+  color: white;
+  transition: 0.3s;
+}
